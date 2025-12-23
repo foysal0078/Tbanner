@@ -9,13 +9,13 @@
 
 * ```apt update```
 * ```apt install git -y```
-* ```git clone https://github.com/htr-tech/Tbanner```
+* ```git clone https://github.com/foysal0078/Tbanner```
 * ```cd Tbanner```
 * ```bash setup.sh```
 ## [~] Input Your Name & Restart The App
 ### Or ; Use Single Command
 ```
-apt update && apt install git -y && git clone https://github.com/htr-tech/Tbanner && cd Tbanner && bash setup.sh
+apt update && apt install git -y && git clone https://github.com/foysal0078/Tbanner && cd Tbanner && bash setup.sh
 ```
 
 ## [+] Features :
