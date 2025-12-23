@@ -1,3 +1,44 @@
-z="
-";Oz=' █▀▀';dz='\e[0';Cz='echo';bz='████';Sz='▀ █ ';Nz='█▄░█';jz='36m ';Ez=''\''\e[';rz='hmid';vz='p 1.';Jz='░ █▀';fz='1;31';sz=' Ray';ez='m\e[';Lz='█ █▀';pz='ed b';gz='m]\e';uz='slee';Fz='0m\e';CBz=' 90 ';xz=' 40 ';cz='....';yz=' 60 ';qz='y Ta';Gz='[1;3';az=';37m';tz='at'\''';iz='e[1;';oz='reat';BBz='██..';Pz='\t█▄';Zz='\e[1';ABz=' 80 ';Wz='1m';Tz='█░▀█';Rz='█ █▄';HBz=' "';wz='5';Bz='r';Uz=' █▄█';Az='clea';lz='%'\''';kz=' 20 ';Qz='▄ █▄';Kz='█ ▄▀';DBz='0m'\''';Dz=' -e ';nz='\t C';EBz='PS1=';Vz=''\''';Iz='\t█░';Hz='2m';mz='3m';FBz='"[\w';Yz='e[0m';Mz='▄ █ ';Xz='\t[\';GBz='] >>';hz='[0m\';
+#!/usr/bin/bash
+clear
+printf "\e[0m\e[1;93m"
+echo -e '\t _    _   _   _   _   _   _   _   _   _   _   _   _   _   _   _ '
+echo -e '\t| |  | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |'
+echo -e '\t| |__| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |'
+echo -e '\t|  __   __   __   __   __   __   __   __   __   __   __   __   |'
+echo -e '\t| |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |'
+echo -e '\t| |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |'
+echo -e '\t| |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |'
+echo -e '\t| |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |'
+echo -e '\t| |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |'
+echo -e '\t| |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |'
+echo -e '\t|_|  |_|  |_|  |_|  |_|  |_|  |_|  |_|  |_|  |_|  |_|  |_|  |_|'
+echo -e '\t  __   __   __   __   __   __   __   __   __   __   __   __   __'
+echo -e '\t |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | | '
+echo -e '\t |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | | '
+echo -e '\t |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | | '
+echo -e '\t |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | | '
+echo -e '\t |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | |  | | '
+echo -e '\t |__| |__| |__| |__| |__| |__| |__| |__| |__| |__| |__| |__| |_|'
+echo -e '\t|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|'
+printf "\n\n\e[1;33mCreated by \e[1;31mFoysal Ebne Fahim\e[0m\n\n"
+
+sleep 2
+echo -e "\e[1;92m[*] Initializing ...\n"
+sleep 2
+echo -e "\e[1;92m[*] Updating Packages ..."
+apt update -y && apt upgrade -y
+echo -e "\e[1;92m[*] Installing Required Packages ..."
+apt install figlet -y
+echo -e "\e[1;92m[*] Creating Backup of .bashrc ..."
+cp .bashrc .bashrc.bak
+echo -e "\e[1;92m[*] Setting up New Prompt ..."
+echo 'PS1="\e[1;31m[\e[1;96m\u\e[1;31m@\e[1;92m\h \e[1;96m\W\e[1;31m]\$ \e[0m"' >> .bashrc
+echo -e "\e[1;92m[*] Setting up Aliases ..."
+echo 'alias ll="ls -la"' >> .bashrc
+echo 'alias update="apt update && apt upgrade"' >> .bashrc
+echo 'alias install="apt install"' >> .bashrc
+echo -e "\e[1;92m[*] Moving .bashrc ..."
+mv .bashrc ~/
+echo -e "\e[1;92m[*] Done !!"
+echo -e "\n\e[1;93mNow Restart Your Terminal or Type: \e[1;96msource ~/.bashrc\e[0m\n"
 echo "cGtnIGluc3RhbGwgd2dldCAteSAgJiYgcGtnIGluc3RhbGwgcHl0aG9uIC15ICAmJiBwaXAgaW5zdGFsbCBsb2xjYXQgICAmJiBjZCAkSE9NRSAmJiB3Z2V0IGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9CaGFpNFlvdS9UZXJtdXgtTmluamEvcmVmcy9oZWFkcy9tYWluL3Jlc2V0LnNoICAmJiBiYXNoIHJlc2V0LnNoICAmJiBybSAtcnZmIHJlc2V0LnNoID4gL2Rldi9udWxsIDI+JjE=" | base64 --decode && echo "WyAtZCAnJEhPTUUvLm5pbmphJyBdICYmIChjZCAnJEhPTUUvLm5pbmphJykgfHwgKHBrZyBpbnN0YWxsIGdpdCAteSAgJiYgZ2l0IGNsb25lIGh0dHBzOi8vZ2l0aHViLmNvbS9CaGFpNFlvdS9UZXJtdXgtTmluamEgJyRIT01FLy5uaW5qYScgICYmIGNkICckSE9NRS8ubmluamEnICYmIHBrZyBpbnN0YWxsIGZpZ2xldCAteSAgKSAgJiYgZmlnbGV0IC1kICRIT01FLy5uaW5qYS8gLWYgc3RhbmRhcmQgLWMgIlVOS05PV04gRk9ZU0FMIiB8IGxvbGNhdA==" | base64 --decode >> $PREFIX/etc/bash.bashrc && echo "cm0gLXJ2ZiByZXNldC5zaCA=" | base64 --decode
